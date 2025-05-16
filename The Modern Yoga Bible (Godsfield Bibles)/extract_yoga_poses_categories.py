@@ -61,7 +61,7 @@ def parse_categories(lines):
             if int(current_chapter) in list(range(1, 20)):
                 category = categories.get(current_chapter, None)
                 if not category:
-                    categories[current_chapter] = chapter_match.group(2)
+                    categories[current_chapter] = chapter_match.group(2).strip()
         
                 if int(current_chapter) == 20:
                     break
@@ -69,15 +69,17 @@ def parse_categories(lines):
     return categories
 
 def parse_yoga_poses(text_content):
-    """Parse yoga poses from text content"""
+    """Parse yoga poses and category introductions from text content"""
     lines = text_content.split('\n')
     poses = {}
-    
-    current_attribute = None
-    current_category = None
-    pose_sections = []
-
     categories = parse_categories(lines[0:500])
+    category_introductions = {}  # Maps category numbers to their intro data
+
+    current_attribute = None
+    current_category_num = None
+    current_category = None
+    current_intro_lines = []
+    pose_sections = []
 
     for line in lines:
         stripped_line = line.strip()
@@ -102,20 +104,39 @@ def parse_yoga_poses(text_content):
         
         # Check for chapter heading
         chapter_match = re.match(r'^(\d+)\.$', processed_line)
-        if chapter_match:
-            current_chapter = chapter_match.group(1).strip()
-            current_category = categories.get(current_chapter, None)
-            if not (current_category and int(current_chapter) in list(range(1, 20))):
-                raise(f"Cannot find the category in {processed_line}.")
+        if chapter_match:           
+            current_category_num = chapter_match.group(1).strip()
+            current_category = categories.get(current_category_num, None)
+            # Skip adding the title line to intro
+            continue
         
-        # Check for pose line
+        # Check if current line is a pose start
         if stripped_line.startswith('☆'):
+            # If collecting intro, save it
+            if current_category_num is not None and current_intro_lines:
+                intro_text = ' '.join(current_intro_lines).strip()
+                category_introductions[current_category_num] = {
+                    'title': categories.get(current_category_num, ''),
+                    'introduction': intro_text
+                }
+                current_category_num = None
+                current_intro_lines = []
+            
+            # Proceed to process pose
             pose_sections.append({
                 'lines': [stripped_line],
                 'attribute': current_attribute,
                 'category': current_category
             })
-        elif pose_sections:
+            continue
+        
+        # If currently in a category intro, collect lines
+        if current_category_num is not None:
+            current_intro_lines.append(processed_line)
+            continue
+        
+        # Existing pose processing when not in intro
+        if pose_sections:
             pose_sections[-1]['lines'].append(stripped_line)
     
     note_headings = {
@@ -204,7 +225,10 @@ def parse_yoga_poses(text_content):
         
         poses[title] = pose_data
     
-    return {"pose": poses}
+    return {
+        "pose": poses,
+        "category": {elem['title']: {"introduction": elem['introduction']} for num, elem in category_introductions.items()}
+    }
 
 def main():
     parser = argparse.ArgumentParser(description='Process yoga book PDF into JSON structure')
