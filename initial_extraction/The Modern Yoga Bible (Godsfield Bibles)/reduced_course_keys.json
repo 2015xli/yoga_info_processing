@@ -1,0 +1,743 @@
+{
+  "course": [
+    {
+      "name": "Starter flow: 15-...",
+      "challenge": 1,
+      "description": "Short revitalizin...",
+      "sequence": [
+        {
+          "pose": "Tiger Flow",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Flow through 3 cy..."
+        },
+        {
+          "pose": "Spine-Mobilizing ...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Dragon Flow",
+          "duration_seconds": 90,
+          "repeat_times": 2,
+          "transition_notes": "Dynamic hip opene..."
+        },
+        {
+          "pose": "Three-Step Should...",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Perform: 1) Eagle..."
+        },
+        {
+          "pose": "Reclining Twist Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Mindfulness Medit...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Sit upright with ..."
+        }
+      ]
+    },
+    {
+      "name": "Starter flow: com...",
+      "challenge": 1,
+      "description": "Gentle full-body ...",
+      "sequence": [
+        {
+          "pose": "Circle of Joy",
+          "duration_seconds": 30,
+          "repeat_times": 5,
+          "transition_notes": "Standing flow: In..."
+        },
+        {
+          "pose": "Gate Pose with Si...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Pigeon Limbering",
+          "duration_seconds": 20,
+          "repeat_times": 10,
+          "transition_notes": "5 reps/side: Puls..."
+        },
+        {
+          "pose": "Shoulder Sweeps",
+          "duration_seconds": 15,
+          "repeat_times": 10,
+          "transition_notes": "5/side: Circle ar..."
+        },
+        {
+          "pose": "Easy Sun Salute",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: St..."
+        },
+        {
+          "pose": "Reclining Twist Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Peaceful Mind Rel...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Supine position w..."
+        }
+      ]
+    },
+    {
+      "name": "Power Flow",
+      "challenge": 2,
+      "description": "Dynamic sequence ...",
+      "sequence": [
+        {
+          "pose": "Spine Mobilizer",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Begin seated, foc..."
+        },
+        {
+          "pose": "Strengthening Sun...",
+          "duration_seconds": 60,
+          "repeat_times": 4,
+          "transition_notes": "Maintain 3-second..."
+        },
+        {
+          "pose": "Three-Legged Dogs...",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: En..."
+        },
+        {
+          "pose": "Exultant Warrior ...",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Left side: Hold c..."
+        },
+        {
+          "pose": "Three-Legged Dogs...",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Right leg lift: M..."
+        },
+        {
+          "pose": "Exultant Warrior ...",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Right side: Keep ..."
+        },
+        {
+          "pose": "Three-Legged Dogs...",
+          "duration_seconds": 30,
+          "repeat_times": 1,
+          "transition_notes": "Neutral reset: Ch..."
+        },
+        {
+          "pose": "Shoulder-Stretchi...",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Each side: Rotate..."
+        },
+        {
+          "pose": "Three-Legged Dogs...",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Prepare for Stand..."
+        },
+        {
+          "pose": "Standing Splits",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Hold 3 breaths pe..."
+        },
+        {
+          "pose": "Three-Legged Dogs...",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Transition to Eag..."
+        },
+        {
+          "pose": "Shoulder-Releasin...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "3 breaths standin..."
+        },
+        {
+          "pose": "Open Squat Twist",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "5 breaths per sid..."
+        },
+        {
+          "pose": "East–West Flow",
+          "duration_seconds": 90,
+          "repeat_times": 3,
+          "transition_notes": "Flow continuously..."
+        },
+        {
+          "pose": "Inclined Plane Pose",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Hold 5 breaths pe..."
+        },
+        {
+          "pose": "Intense Reclining...",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "2-minute hold per..."
+        },
+        {
+          "pose": "Dancing Bridge",
+          "duration_seconds": 60,
+          "repeat_times": 5,
+          "transition_notes": "Pulse hips upward..."
+        },
+        {
+          "pose": "Plough-Pose Lifts",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Controlled lifts:..."
+        },
+        {
+          "pose": "Three-Up Bridge Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "30-second hold pe..."
+        },
+        {
+          "pose": "Starter Shoulder-...",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "3-minute hold. Us..."
+        },
+        {
+          "pose": "Neck Releases Aft...",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Gentle rotations:..."
+        },
+        {
+          "pose": "Reclining Eagle T...",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "2.5 minutes total..."
+        },
+        {
+          "pose": "Half-Lotus Balance",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "30 seconds per si..."
+        },
+        {
+          "pose": "Head-Beyond-The-K...",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "1.5 minutes per s..."
+        },
+        {
+          "pose": "Peaceful Mind Rel...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Full-body scan: 5..."
+        },
+        {
+          "pose": "Mindfulness Medit...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Seated meditation..."
+        }
+      ]
+    },
+    {
+      "name": "supple and strong...",
+      "challenge": 2,
+      "description": "A Yang sequence b...",
+      "sequence": [
+        {
+          "pose": "Seated Neck Stret...",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Roll shoulders ba..."
+        },
+        {
+          "pose": "Easy Sun Salute",
+          "duration_seconds": 75,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: 5 ..."
+        },
+        {
+          "pose": "Dog-Pose Split – ...",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Hi..."
+        },
+        {
+          "pose": "Bound Side-Angle ...",
+          "duration_seconds": 50,
+          "repeat_times": 1,
+          "transition_notes": "Maintain bind whi..."
+        },
+        {
+          "pose": "Dog-Pose Split – ...",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Right leg lift: K..."
+        },
+        {
+          "pose": "Bound Side-Angle ...",
+          "duration_seconds": 50,
+          "repeat_times": 1,
+          "transition_notes": "Ground through ou..."
+        },
+        {
+          "pose": "Dog-Pose Split – ...",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Pr..."
+        },
+        {
+          "pose": "Revolved Half-Moo...",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Dog Pose Split – ...",
+          "duration_seconds": 30,
+          "repeat_times": 2,
+          "transition_notes": "Right then left: ..."
+        },
+        {
+          "pose": "Dancer’s Bow",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Release grip slow..."
+        },
+        {
+          "pose": "Big-Toe Balance",
+          "duration_seconds": 35,
+          "repeat_times": 2,
+          "transition_notes": "Use wall support ..."
+        },
+        {
+          "pose": "Crow to Plank Jum...",
+          "duration_seconds": 15,
+          "repeat_times": 6,
+          "transition_notes": "Engage mula bandh..."
+        },
+        {
+          "pose": "Core-Activating P...",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Alternate forearm..."
+        },
+        {
+          "pose": "Threaded Needle",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Unthread slowly, ..."
+        },
+        {
+          "pose": "Half-Frog, Half-L...",
+          "duration_seconds": 30,
+          "repeat_times": 2,
+          "transition_notes": "Alternate variati..."
+        },
+        {
+          "pose": "Sage Pose with Ne...",
+          "duration_seconds": 75,
+          "repeat_times": 1,
+          "transition_notes": "Unwind twist grad..."
+        },
+        {
+          "pose": "Hip-Opening Heron...",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Support thigh wit..."
+        },
+        {
+          "pose": "Headstand",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Exit via controll..."
+        },
+        {
+          "pose": "Neck Releases aft...",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Perform seated ch..."
+        },
+        {
+          "pose": "Three-Step Reclin...",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Progress through ..."
+        },
+        {
+          "pose": "Tibetan Alternate...",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Use vishnu mudra,..."
+        },
+        {
+          "pose": "Serenity Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Elevate legs on b..."
+        },
+        {
+          "pose": "Gratitude Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Sit upright with ..."
+        }
+      ]
+    },
+    {
+      "name": "energy and balance",
+      "challenge": 2,
+      "description": "Grounding sequenc...",
+      "sequence": [
+        {
+          "pose": "Chair-Pose Flow",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Flow between Chai..."
+        },
+        {
+          "pose": "Dragon Flow",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Spiralling Dog",
+          "duration_seconds": 20,
+          "repeat_times": 4,
+          "transition_notes": "Add spinal twist ..."
+        },
+        {
+          "pose": "Warrior I Breathi...",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Sync breath to ar..."
+        },
+        {
+          "pose": "Shoulder-Releasin...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Unwind arms slowl..."
+        },
+        {
+          "pose": "Pyramid Prayer",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Step back foot 6\"..."
+        },
+        {
+          "pose": "Deep Forward Bend...",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Walk hands up wal..."
+        },
+        {
+          "pose": "Twisted Pigeon",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Guide top knee ac..."
+        },
+        {
+          "pose": "Dog to Plank Flow",
+          "duration_seconds": 20,
+          "repeat_times": 5,
+          "transition_notes": "Engage transverse..."
+        },
+        {
+          "pose": "Pigeon Crescent Pose",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Transition from P..."
+        },
+        {
+          "pose": "Bow Pose Three Ways",
+          "duration_seconds": 40,
+          "repeat_times": 3,
+          "transition_notes": "Cycle through var..."
+        },
+        {
+          "pose": "Child Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Walk hands to R/L..."
+        },
+        {
+          "pose": "Seated Yogic Roll...",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Initiate from pel..."
+        },
+        {
+          "pose": "Seated Rotated Gate",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Place opposite ha..."
+        },
+        {
+          "pose": "Forearm Balance",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Use wall for supp..."
+        },
+        {
+          "pose": "Heavenly Happy-Ba...",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Rock side-to-side..."
+        },
+        {
+          "pose": "Energy-Balancing ...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Incorporate Jin S..."
+        },
+        {
+          "pose": "Focusing Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Transition via Su..."
+        }
+      ]
+    },
+    {
+      "name": "stretch and restore",
+      "challenge": 2,
+      "description": "Blends active yan...",
+      "sequence": [
+        {
+          "pose": "Backbend Ripple (...",
+          "duration_seconds": 90,
+          "repeat_times": 2,
+          "transition_notes": "Flow between gent..."
+        },
+        {
+          "pose": "Salute to the Moon",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Lateral flow sequ..."
+        },
+        {
+          "pose": "Double-Twist Dog ...",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "From Down Dog: Th..."
+        },
+        {
+          "pose": "Seaweed Sway",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Standing side ben..."
+        },
+        {
+          "pose": "Bowing Side-Angle...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "From Warrior II: ..."
+        },
+        {
+          "pose": "Seaweed Sway",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Repeat earlier pa..."
+        },
+        {
+          "pose": "Sugar-Cane Goddes...",
+          "duration_seconds": 50,
+          "repeat_times": 2,
+          "transition_notes": "From Side Angle: ..."
+        },
+        {
+          "pose": "Shoulder-Releasin...",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Interlace hands b..."
+        },
+        {
+          "pose": "Kinky Cobbler’s Pose",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Sit slowly with b..."
+        },
+        {
+          "pose": "Yogic Compass",
+          "duration_seconds": 75,
+          "repeat_times": 2,
+          "transition_notes": "From seated: Rota..."
+        },
+        {
+          "pose": "Prayer Sweeps",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Seated spinal wav..."
+        },
+        {
+          "pose": "Camel Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Pulse hips forwar..."
+        },
+        {
+          "pose": "Corkscrew Twist",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Supine spiral: Le..."
+        },
+        {
+          "pose": "Blissful Banana",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Log-roll to side...."
+        },
+        {
+          "pose": "Resting Pigeon",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "Slide leg forward..."
+        },
+        {
+          "pose": "Restorative Forwa...",
+          "duration_seconds": 240,
+          "repeat_times": 1,
+          "transition_notes": "Use chair/bolster..."
+        },
+        {
+          "pose": "Restorative Inver...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Elevate hips on f..."
+        },
+        {
+          "pose": "Floating Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Place sandbag on ..."
+        },
+        {
+          "pose": "Loving-Kindness M...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Shift to cross-le..."
+        }
+      ]
+    },
+    {
+      "name": "clear and calm",
+      "challenge": 2,
+      "description": "A balanced fusion...",
+      "sequence": [
+        {
+          "pose": "Butterfly",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From seated, pres..."
+        },
+        {
+          "pose": "Mini Sun Salute",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: St..."
+        },
+        {
+          "pose": "Yin Dragon Lunge",
+          "duration_seconds": 180,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: ..."
+        },
+        {
+          "pose": "Expansive Breath ...",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Transition from l..."
+        },
+        {
+          "pose": "Golden Ball Warrior",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "From warrior II: ..."
+        },
+        {
+          "pose": "Slinky Shoulders,...",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Seated pulses: Ro..."
+        },
+        {
+          "pose": "Tension-Releasing...",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "From standing: Hi..."
+        },
+        {
+          "pose": "Cobbler’s Bridge",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From supine: Pres..."
+        },
+        {
+          "pose": "Sphinx or Seal",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "Prone transition:..."
+        },
+        {
+          "pose": "Yin Happy Baby",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "From supine: Grab..."
+        },
+        {
+          "pose": "Banana Pose",
+          "duration_seconds": 180,
+          "repeat_times": 2,
+          "transition_notes": "Side-lying transi..."
+        },
+        {
+          "pose": "Yin Shoulder Stre...",
+          "duration_seconds": 120,
+          "repeat_times": 2,
+          "transition_notes": "Tabletop transiti..."
+        },
+        {
+          "pose": "Yin Frog",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From prone: Slide..."
+        },
+        {
+          "pose": "Child Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Kneeling transiti..."
+        },
+        {
+          "pose": "Energy-Balancing ...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Supine transition..."
+        },
+        {
+          "pose": "Mindfulness Medit...",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Seated transition..."
+        }
+      ]
+    }
+  ]
+}

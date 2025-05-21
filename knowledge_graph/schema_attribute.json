@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^attribute:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "intensity_level": {"type": "integer", "minimum": 1, "maximum": 5}
+  },
+  "required": ["id", "name"]
+}

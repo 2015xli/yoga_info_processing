@@ -1,0 +1,224 @@
+Here's the **revised design with 6 core schemas**, carefully crafted for a yoga knowledge graph with health considerations:
+
+---
+
+### **1. Pose Schema** (`Pose` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^pose:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "challenge_level": {"type": "integer", "minimum": 1, "maximum": 3},
+    "description": {"type": "string"},
+    "steps": {"type": "array", "items": {"type": "string"}},
+    "contraindications": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/health_issue_ref"}
+    },
+    "benefits": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/health_issue_ref"}
+    },
+    "category_id": {"$ref": "#/definitions/category_ref"},
+    "attribute_ids": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/attribute_ref"}
+    },
+    "anatomical_targets": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/anatomical_ref"}
+    }
+  },
+  "required": ["id", "name", "challenge_level"],
+  "definitions": {
+    "health_issue_ref": {"type": "string", "pattern": "^health_issue:[a-z0-9_]+$"},
+    "category_ref": {"type": "string", "pattern": "^category:[a-z0-9_]+$"},
+    "attribute_ref": {"type": "string", "pattern": "^attribute:[a-z0-9_]+$"},
+    "anatomical_ref": {"type": "string", "pattern": "^anatomical:[a-z0-9_]+$"}
+  }
+}
+```
+
+---
+
+### **2. Health Issue Schema** (`HealthIssue` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^health_issue:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "severity_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "related_systems": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "required": ["id", "name"]
+}
+```
+
+---
+
+### **3. Course Schema** (`Course` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^course:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "sequence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pose_id": {"$ref": "#/definitions/pose_ref"},
+          "duration_seconds": {"type": "integer"},
+          "transition_notes": {"type": "string"}
+        },
+        "required": ["pose_id"]
+      }
+    }
+  },
+  "required": ["id", "name", "sequence"],
+  "definitions": {
+    "pose_ref": {"type": "string", "pattern": "^pose:[a-z0-9_]+$"}
+  }
+}
+```
+
+---
+
+### **4. Category Schema** (`Category` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^category:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "parent_category": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/definitions/category_ref"}
+      ]
+    }
+  },
+  "required": ["id", "name"],
+  "definitions": {
+    "category_ref": {"type": "string", "pattern": "^category:[a-z0-9_]+$"}
+  }
+}
+```
+
+---
+
+### **5. Attribute Schema** (`Attribute` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^attribute:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "intensity_level": {"type": "integer", "minimum": 1, "maximum": 5}
+  },
+  "required": ["id", "name"]
+}
+```
+
+---
+
+### **6. Anatomical Schema** (`Anatomical` Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^anatomical:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "system": {"type": "string"},
+    "subparts": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/anatomical_ref"}
+    }
+  },
+  "required": ["id", "name"],
+  "definitions": {
+    "anatomical_ref": {"type": "string", "pattern": "^anatomical:[a-z0-9_]+$"}
+  }
+}
+```
+
+---
+
+### **Metadata Schema** (Special Node)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "const": "metadata"},
+    "version": {"type": "string"},
+    "source": {"type": "string"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "update_policy": {"type": "string"}
+  },
+  "required": ["id", "version"]
+}
+```
+
+---
+
+### **Key Relationship Design**
+| Relationship                  | From Node     | To Node         | Edge Properties (Optional)           |
+|-------------------------------|---------------|-----------------|---------------------------------------|
+| `CONTRAINDICATED_FOR`         | Pose          | HealthIssue     | {severity_weight: 0.8}                |
+| `BENEFITS`                    | Pose          | HealthIssue     | {evidence_level: "clinical_study"}    |
+| `TARGETS`                     | Pose          | Anatomical      | {intensity: 0-1 scale}                |
+| `BELONGS_TO`                  | Pose          | Category        | -                                     |
+| `HAS_ATTRIBUTE`               | Pose          | Attribute       | -                                     |
+| `INCLUDES`                    | Course        | Pose            | {order: 1, duration: 60}              |
+| `PART_OF_SYSTEM`              | Anatomical    | Anatomical      | (for hierarchy)                       |
+
+---
+
+### **Example HealthIssue Usage**
+```json
+{
+  "id": "health_issue:hypertension",
+  "name": "Hypertension",
+  "description": "High blood pressure condition",
+  "severity_level": "high",
+  "related_systems": ["cardiovascular"]
+}
+
+{
+  "id": "pose:downward_dog",
+  "contraindications": ["health_issue:glaucoma", "health_issue:wrist_injury"],
+  "benefits": ["health_issue:stress", "health_issue:digestive_issues"]
+}
+```
+
+---
+
+### **Implementation Strategy**
+1. **ID Convention**: Use prefix-based IDs (`pose:`, `health_issue:`) for clarity
+2. **Normalization**: Store each schema type in separate collections/tables
+3. **Graph Traversal**: Use edge properties for weighted relationships
+4. **Query Optimization**: Index frequently searched fields like `challenge_level` and `severity_level`
+
+This design enables powerful queries like:
+- "Find all poses that benefit `digestive_issues` but aren't contraindicated for `hypertension`"
+- "Show me courses containing poses that target `spine` with `yin` attributes"

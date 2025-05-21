@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^health_issue:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "severity_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "related_systems": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "required": ["id", "name"]
+}

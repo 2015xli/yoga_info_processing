@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string", "pattern": "^pose:[a-z0-9_]+$"},
+    "name": {"type": "string"},
+    "challenge_level": {"type": "integer", "minimum": 1, "maximum": 3},
+    "description": {"type": "string"},
+    "steps": {"type": "array", "items": {"type": "string"}},
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "prerequisites": {"type": "array", "items": {"type": "string"}},
+        "counter_poses": {"type": "array", "items": {"type": "string"}},
+        "progressions": {"type": "array", "items": {"type": "string"}},
+        "common_combinations": {"type": "array", "items": {"type": "string"}}
+      },
+    "duration_range": {
+      "type": "object",
+      "properties": {
+        "minimum": {"type": "number"},
+        "recommended": {"type": "number"},
+        "maximum": {"type": "number"}
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": {"enum": ["block", "strap", "bolster", "wall", "blanket"]}
+    },
+    "contraindications": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/health_issue_ref"}
+    },
+    "benefits": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/health_issue_ref"}
+    },
+    "category_id": {"$ref": "#/definitions/category_ref"},
+    "attribute_ids": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/attribute_ref"}
+    },
+    "anatomical_focus": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/anatomical_ref"}
+    }
+  },
+  "required": ["id", "name", "challenge_level", "steps"],
+  "definitions": {
+    "health_issue_ref": {"type": "string", "pattern": "^health_issue:[a-z0-9_]+$"},
+    "category_ref": {"type": "string", "pattern": "^category:[a-z0-9_]+$"},
+    "attribute_ref": {"type": "string", "pattern": "^attribute:[a-z0-9_]+$"},
+    "anatomical_ref": {"type": "string", "pattern": "^anatomical:[a-z0-9_]+$"}
+  }
+}

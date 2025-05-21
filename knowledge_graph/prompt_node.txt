@@ -1,0 +1,14 @@
+Convert the following yoga poses to match this JSON schema. Rules:
+1. Generate IDs as 'pose:snake_case_name'
+2. Convert relationship names to pose IDs
+3. Infer duration from step count (30s/step minimum)
+4. Guess props from step descriptions
+5. Use anatomical terms from provided glossary
+
+Schema:
+{schema}
+
+Output ONLY a JSON array of converted poses, no commentary:
+
+Poses:
+{poses}
