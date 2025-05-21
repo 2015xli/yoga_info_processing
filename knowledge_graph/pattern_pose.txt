@@ -6,6 +6,7 @@
 (?i)\bmagical[\s–\-_]+shoulder[\s–\-_]+and[\s–\-_]+neck[\s–\-_]+release(?:s|es)?\b|||magical_shoulder_and_neck_release
 (?i)\bclassic[\s–\-_]+downward[\s–\-_]+facing[\s–\-_]+dog[\s–\-_]+pose(?:s|es)?\b|||classic_downward_facing_dog_pose
 (?i)\bshoulder[\s–\-_]+releasing[\s–\-_]+forward[\s–\-_]+fold(?:s|es)?\b|||shoulder_releasing_forward_fold
+(?i)\bslinky[\s–\-_]+shoulders,[\s–\-_]+gleeful[\s–\-_]+glutes(?:s|es)?\b|||slinky_shoulders_gleeful_glutes
 (?i)\bslinky[\s–\-_]+shoulders[\s–\-_]+gleeful[\s–\-_]+glutes(?:s|es)?\b|||slinky_shoulders_gleeful_glutes
 (?i)\btension[\s–\-_]+releasing[\s–\-_]+forward[\s–\-_]+fold(?:s|es)?\b|||tension_releasing_forward_fold
 (?i)\bintense[\s–\-_]+reclining[\s–\-_]+side[\s–\-_]+stretch(?:s|es)?\b|||intense_reclining_side_stretch
@@ -55,6 +56,7 @@
 (?i)\bexultant[\s–\-_]+warrior[\s–\-_]+flow(?:s|es)?\b|||exultant_warrior_flow
 (?i)\breclining[\s–\-_]+eagle[\s–\-_]+twist(?:s|es)?\b|||reclining_eagle_twist
 (?i)\bshoulder[\s–\-_]+loving[\s–\-_]+cobra(?:s|es)?\b|||shoulder_loving_cobra
+(?i)\bhalf[\s–\-_]+frog,[\s–\-_]+half[\s–\-_]+locust(?:s|es)?\b|||half_frog_half_locust
 (?i)\bhalf[\s–\-_]+frog[\s–\-_]+half[\s–\-_]+locust(?:s|es)?\b|||half_frog_half_locust
 (?i)\bhandstand[\s–\-_]+at[\s–\-_]+the[\s–\-_]+wall(?:s|es)?\b|||handstand_at_the_wall
 (?i)\blegs[\s–\-_]+up[\s–\-_]+the[\s–\-_]+wall[\s–\-_]+pose(?:s|es)?\b|||legs_up_the_wall_pose
@@ -80,6 +82,7 @@
 (?i)\bbow[\s–\-_]+pose[\s–\-_]+three[\s–\-_]+ways(?:s|es)?\b|||bow_pose_three_ways
 (?i)\belevated[\s–\-_]+child[\s–\-_]+pose(?:s|es)?\b|||elevated_child_pose
 (?i)\bside[\s–\-_]+lying[\s–\-_]+savasana(?:s|es)?\b|||side_lying_savasana
+(?i)\brestorative[\s–\-_]+inversion(?:s|es)?\b|||restorative_inversion
 (?i)\bserenity[\s–\-_]+relaxation(?:s|es)?\b|||serenity_relaxation
 (?i)\bfloating[\s–\-_]+relaxation(?:s|es)?\b|||floating_relaxation
 (?i)\bfocusing[\s–\-_]+meditation(?:s|es)?\b|||focusing_meditation
@@ -116,6 +119,7 @@
 (?i)\bthreaded[\s–\-_]+needle(?:s|es)?\b|||threaded_needle
 (?i)\bside[\s–\-_]+angle[\s–\-_]+pose(?:s|es)?\b|||side_angle_pose
 (?i)\bbasic[\s–\-_]+headstand(?:s|es)?\b|||basic_headstand
+(?i)\bheadstand[\s–\-_]+pose(?:s|es)?\b|||headstand_pose
 (?i)\bforearm[\s–\-_]+balance(?:s|es)?\b|||forearm_balance
 (?i)\bblissful[\s–\-_]+banana(?:s|es)?\b|||blissful_banana
 (?i)\bbackbend[\s–\-_]+ripple(?:s|es)?\b|||backbend_ripple

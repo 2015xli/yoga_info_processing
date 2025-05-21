@@ -113,7 +113,7 @@
           "transition_notes": "Maintain 3-second holds in Plank/Chaturanga. Sync with Ocean Breath (inhale up dog/exhale down dog)"
         },
         {
-          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "pose": "Three-Legged Dog",
           "duration_seconds": 20,
           "repeat_times": 1,
           "transition_notes": "Left leg lift: Engage glutes, keep hips square. Transition to lunge on exhale."
@@ -125,7 +125,7 @@
           "transition_notes": "Left side: Hold crescent lunge 3 breaths. Flow through 3 cycles per side."
         },
         {
-          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "pose": "Three-Legged Dog",
           "duration_seconds": 20,
           "repeat_times": 1,
           "transition_notes": "Right leg lift: Maintain neutral pelvis. Move to lunge with control."
@@ -137,7 +137,7 @@
           "transition_notes": "Right side: Keep front knee at 90°. Use arm sweep to maintain balance."
         },
         {
-          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "pose": "Three-Legged Dog",
           "duration_seconds": 30,
           "repeat_times": 1,
           "transition_notes": "Neutral reset: Check hand-foot alignment before transitioning"
@@ -149,7 +149,7 @@
           "transition_notes": "Each side: Rotate chest upward, 5 breaths per side. Modify with block if needed"
         },
         {
-          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "pose": "Three-Legged Dog",
           "duration_seconds": 20,
           "repeat_times": 1,
           "transition_notes": "Prepare for Standing Splits: Engage core before lifting leg"
@@ -161,7 +161,7 @@
           "transition_notes": "Hold 3 breaths per side. Focus on hamstring release over height"
         },
         {
-          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "pose": "Three-Legged Dog",
           "duration_seconds": 20,
           "repeat_times": 1,
           "transition_notes": "Transition to Eagle: Keep shoulders relaxed"
@@ -367,7 +367,7 @@
           "transition_notes": "Support thigh with strap, transition via gentle leg circles"
         },
         {
-          "pose": "Headstand",
+          "pose": "Headstand pose",
           "duration_seconds": 180,
           "repeat_times": 1,
           "transition_notes": "Exit via controlled tuck roll, immediately move to child's pose"
@@ -529,7 +529,7 @@
       "total_duration": "01:12:45",
       "sequence": [
         {
-          "pose": "Backbend Ripple (Rectangular Breath)",
+          "pose": "Backbend Ripple, or Rectangular Breath",
           "duration_seconds": 90,
           "repeat_times": 2,
           "transition_notes": "Flow between gentle backbends on 4-count Rectangular Breath (inhale 4, hold 4, exhale 4, hold 4). Transition to standing neutral spine."
@@ -652,7 +652,7 @@
       "total_duration": "01:13:00",
       "sequence": [
         {
-          "pose": "Butterfly",
+          "pose": "Butterfly pose",
           "duration_seconds": 180,
           "repeat_times": 1,
           "transition_notes": "From seated, press soles together. Use blocks under knees if needed. Transition to forward fold by walking hands forward gradually"
@@ -700,7 +700,7 @@
           "transition_notes": "From supine: Press soles together, knees out. Lift hips slowly with pelvic floor engagement"
         },
         {
-          "pose": "Sphinx or Seal",
+          "pose": "Sphinx pose, or Seal pose",
           "duration_seconds": 150,
           "repeat_times": 1,
           "transition_notes": "Prone transition: Walk elbows forward incrementally to find edge. Keep shoulders away from ears"

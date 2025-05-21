@@ -3353,6 +3353,39 @@
       "how_to_come_out": ""
     },
     {
+      "name": "headstand_pose",
+      "challenge": "3",
+      "introduction": "Known as the king of the yoga postures, Headstand is considered to be calming to the nervous system, although it can also bring a fresh zing to your day. Do read the “take care” cautions below, to see if it will suit you. Start off using a wall and, once you feel practised enough, move to the centre of the room.",
+      "steps": [
+        "Fold a yoga mat to form a large rectangle. Place it between you and the wall, then kneel in front of it. Position your elbows on it shoulder- width apart and interlace your fingers, about 20 cm (8 inches) from the wall. Check that your wrists are vertical, with the thin edge facing up. Press the underside of the wrist into the floor, so there is no rolling in or out of the wrists. Place the back of your head into the arch created by your hands. Ensure it’s the crown of the head that touches the floor, not the forehead. While still kneeling, practise lifting your shoulders away from the floor. Press down evenly through the forearms, creating a triangle of support, while the shoulders lift up and away to encourage minimal compression of the neck. When you can do this action, you are ready to lift your hips and straighten your legs. If you lift your hips and find that you can’t help your shoulders collapsing down, or your neck comes out of its natural curve, then stop for now, until you build up your flexibility and strength.",
+        "On tiptoes, walk your feet in until you can’t go further. This is the point where you feel the readiness to lift. Your shoulders and hips will be lined up above your ears. Continue to press the forearms down and the shoulders up. Firm your abdominal muscles.",
+        "Bend your knees to allow your feet to float up. Bring your knees in toward your abdomen. Aim for the arms to take 70 per cent of the weight and the head just 30 per cent. Stabilize here.",
+        "If you feel steady, come all the way up. “Unfold” your legs by first pointing your knees upward, so that your heels are near your buttocks.",
+        "Now straighten your legs in the air. Start with a 30-second hold. Before you build up to longer holds, seek advice from a qualified teacher who can check your alignment. Once you are up, ensure your hips stay symmetrical. Keep your shoulders working away from the ears, to limit the weight on the head, and press the floor away with your arms. Extend through the feet, to keep the sense of lift. When you are strong here you will feel lighter. To come down, reverse the steps you took to get up: fold at the knees, then hinge at the hips to bring your toes to the floor lightly and with control. Rest in the child_pose for a full minute."
+      ],
+      "attribute": "Yang",
+      "category": "Upside-down",
+      "build_up": [
+        "seated_neck_stretch_and_strengthen",
+        "starter_headstand",
+        "headless_headstand"
+      ],
+      "move_forward": [
+        "tripod_to_one_legged_crow_pose"
+      ],
+      "balance_out": [
+        "neck_releases_after_inversions"
+      ],
+      "unwind": [
+        "legs_up_the_wall_pose"
+      ],
+      "modification": "",
+      "caution": "Avoid Headstand if you have concerns about current or previous neck injuries, pains, headaches, shoulder aches or excess tightness. Avoid inversions if you have eye issues such as a detached retina or a risk of glaucoma. Extra care must be taken during pregnancy, so make sure to work with an experienced teacher.",
+      "effects": "",
+      "practice_note": "",
+      "how_to_come_out": ""
+    },
+    {
       "name": "headstand_variations",
       "challenge": "3",
       "introduction": "Once you have mastered Headstand and can do it with ease away from the wall, jazz up your practice with these options.",
@@ -3876,6 +3909,27 @@
       "caution": "Avoid these forward bends in cases of a slipped (herniated) disc or sacroiliac dysfunction.",
       "effects": "",
       "practice_note": "Enjoy soft belly-breathing. So often we hold tightness where we just don’t need to. Scan over your body and allow all your muscles to deactivate, so that any unnecessary holding can release. Imagine that by resting the forehead you are giving the whole frontal lobe of your brain a rest, too.",
+      "how_to_come_out": ""
+    },
+    {
+      "name": "restorative_inversion",
+      "challenge": "1",
+      "introduction": "More than a yoga pose, this inversion is known as a mudra , a mood-altering pose that is believed to benefit the flow of prana , or life energy, through the whole body. So simple, so delicious. Ten or so minutes in this resting version of Shoulder-Stand will change the tone of your whole day.",
+      "steps": [
+        "Take a yoga bolster, or fold a blanket to about 80 x 30 x 15cm (30 x 12 x 6in), and place it around 15cm (6in) from a wall. Sit on the bolster, sideways to the wall, so that one hip and shoulder tip touch the wall. Take your arms to the floor behind you and lean back. Swivel on your buttocks as you bring your legs up the wall – if it feels too awkward, try moving the bolster a little further away on the floor.",
+        "As your legs come up, you can rest your shoulders and head down on the floor. Check your alignment: your sacrum should be on the support; your lower back should drape over the bolster edge; your tailbone (which may be close to the wall or further away if you are less flexible) should be on the wall side of the bolster. Your chin, chestbone, pubic bone and big toes should be in a line. Most importantly, you should feel supremely comfortable. Stay for at least five minutes and up to 15. To come out, bend your knees and press your feet into the wall. Slide your bolster to the side, then lower your hips back down and roll out to the side. After several breaths, use your arms to push yourself up to sitting.",
+        "Consider the following options to help you relax in this pose. Take a soft belt and tie it around your mid-thighs; this will enable your leg muscles to fully release from the effort of subtly keeping the legs together. Place a light covering on your eyes. To help those ever- busy hands surrender to stillness, place a light weight like an eye- pillow in each palm. You will continue to cool down as you rest, particularly with your feet up high, so be sure to stay warm: cover yourself from the feet down with a soft blanket."
+      ],
+      "attribute": "Yin",
+      "category": "Restorative yoga",
+      "build_up": [],
+      "move_forward": [],
+      "balance_out": [],
+      "unwind": [],
+      "modification": "",
+      "caution": "If you are menstruating, practise this pose without the bolster so that your upper body rests entirely on the floor. In pregnancy, don’t practise it after 35 weeks.",
+      "effects": "",
+      "practice_note": "Count yourself deeper into stillness. Start at 27 and track your breath, by mentally repeating: “I am breathing in 27. I am breathing out 27. I am breathing in 26. I am breathing out 26.” And so on, down to one. If you lose count, return to 27 and start again. Don’t get tense about this – the aim is not necessarily to reach one. The aim is simply to focus, slow your mind and stay present. If you reach one, then your mind will be trained on your breath. You will be in meditation and can continue to follow the breaths with no further need to count.",
       "how_to_come_out": ""
     },
     {
