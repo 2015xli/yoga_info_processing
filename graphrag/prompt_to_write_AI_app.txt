@@ -1,0 +1,17 @@
+Now I have the graph RAG ready that has yoga poses information and some typical yoga courses. Please help me to implement a query-response application to generate some query response like "suggest a yoga sequence mostly training my hip. Don't include requirement for any props. I have wrist pain that is better avoided in the sequence." Probably I need to use langchain with GraphCypherQAChain, together with the vector store I've built. But you can give better suggestions. 
+
+Here are some pose relationship types:
+- BUILD_UP: Suggested preparatory pose,
+- MOVE_FORWARD: Progression to deepen practice,
+- BALANCE_OUT: Counterpose to balance effects,
+- UNWIND: Easier/more relaxing next pose,
+- INCLUDES_POSE: Pose in course sequence (with order/duration)
+
+And pose field meanings :
+- CAUTION: Contraindications for certain conditions,
+- CHALLENGE: Difficulty level (1=easiest, 3=hardest),
+- HOW_TO_COME_OUT: Combination of UNWIND and BALANCE_OUT with detail explanation,
+- MODIFICATION: Variations for different situations,
+- EFFECTS: Physical/mental benefits,
+- PRACTICE_NOTE: Body positioning suggestions
+

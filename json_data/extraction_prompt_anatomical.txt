@@ -1,0 +1,82 @@
+Please help to identify all the anatomical parts mentioned in the doc below, and output JSON data. 
+== Please use consistent terms for same anatomical part/organ/muscle/bone, etc.  
+== Example output schema (recommended), but you can give your better suggestion.
+{
+  "anatomical": [
+    {
+      "name": "...",
+      "subparts": [subparts...]
+    },
+== Please don't group different parts into one, e.g., foot, foot arch, and toes should be separated as different items. Foot may consist of toes and foot arch, but they are different body part names or scopes. We don't want any ambiguity. In the output JSON data, Toes and foot arch names will be referenced in Foot value as subparts. 
+== Different anatomical items may have hierarchical relations. Hand has fingers, palm wrist, etc. Fingers have thumb, pinky, index finger, etc. You should create individual items for every subpart and subpart's subpart, etc.. They form a hierarchy.  In other words, every anatomical part should have an item. The item may reference other items as its subparts, and may be referenced by other items as their sub parts. If an item has no subparts, then just leave it empty, e.g., big toe may not have subparts, then just have an item as:
+{
+   "name": "big toe",
+   "subparts": []
+}
+== Don't include "Other Structures" as an item. Every item should be an anatomical part. Lung, Sitting bones, etc, should have their respective item entries.
+== Don't include an item like "Head and Neck", which should split into item for Head and item for Neck.
+== Don't to miss any mentioned body parts. I need a complete list!
+== Example output (some example subparts are incomplete):
+{
+  "anatomical": [
+    {
+      "name": "Spine",
+      "subparts": ["Cervical spine", "Thoracic spine", "Lumbar spine", "Sacrum"]
+    },
+    {
+      "name": "Hand",
+      "subparts": ["Fingers", "Palm", "Wrist"]
+    },
+    {
+      "name": "Fingers",
+      "subparts": ["Thumb", "Index finger", "Pinky"]
+    },
+    {
+      "name": "Thumb",
+      "subparts": []
+    },    
+    {
+      "name": "Pelvis",
+      "subparts": ["Hip joint", "Sacrum", "Pubic bone"]
+    }
+}
+== Input doc:
+
+
+
+
+Next with the result:
+==
+I am arranging the anatomical parts, and got the following list. Every part has an item, and may includes multiple subparts (each of which has its own item). The items are hierarchical.  I am trying to get the list as complete as possible, but I need your help.
+{
+  "anatomical": [
+    {
+      "name": "Spine",
+      "subparts": ["Cervical spine", "Thoracic spine", "Lumbar spine", "Sacrum", "Coccyx"]
+    },
+    ...
+   ]
+}
+
+I have some items below that might be useful. You can decide whether to use them. It may have duplicates that should be removed from the final data.
+[
+    {
+      "name": "Mouth",
+      "subparts": ["Lips", "Cheeks", "Palate", "Teeth", "Tongue", "Salivary glands", "Uvula", "Pharynx"]
+    },
+    {"name": "Lips", "subparts": ["Orbicularis oris muscle", "Labial frenulum"]},
+    {"name": "Cheeks", "subparts": ["Buccinator muscle"]},
+    {
+      "name": "Palate",
+      "subparts": ["Hard palate", "Soft palate"]
+    },
+    {"name": "Hard palate", "subparts": []},
+    {"name": "Soft palate", "subparts": ["Uvula", "Palatoglossal arch", "Palatopharyngeal arch"]},
+    {"name": "Uvula", "subparts": []},
+    {
+      "name": "Teeth",
+      "subparts": ["Incisors", "Canines", "Premolars", "Molars", "Wisdom teeth", "Enamel", "Dentin", "Pulp", "Cementum"]
+    }
+]
+
+Please use your knowledge and search to give me a more complete list, return in the same schema as my list, and in JSON format.

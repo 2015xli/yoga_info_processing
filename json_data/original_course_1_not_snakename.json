@@ -1,0 +1,753 @@
+{
+  "course": [
+    {
+      "name": "Starter flow: 15-minute quick-and-easy, all-over supple and strength set",
+      "challenge": 1,
+      "description": "Short revitalizing sequence combining dynamic flows and gentle stretches, ideal for warm-ups or quick energy resets.",
+      "total_duration": "00:15:15",
+      "sequence": [
+        {
+          "pose": "Tiger Flow",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Flow through 3 cycles: Inhale arch, exhale round. Keep movements fluid"
+        },
+        {
+          "pose": "Spine-Mobilizing Lunge",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Hold 3 breaths per side. Keep back knee lowered"
+        },
+        {
+          "pose": "Dragon Flow",
+          "duration_seconds": 90,
+          "repeat_times": 2,
+          "transition_notes": "Dynamic hip opener: 3 pulses per side. Use hands-on-thigh for support"
+        },
+        {
+          "pose": "Three-Step Shoulder Release",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Perform: 1) Eagle arms 2) Reverse prayer 3) Clasped forward fold (30s each)"
+        },
+        {
+          "pose": "Reclining Twist Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Guide knee across body with exhale. Keep shoulders grounded"
+        },
+        {
+          "pose": "Mindfulness Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Sit upright with cushion support. Focus on natural breath rhythm"
+        }
+      ]
+    },
+    {
+      "name": "Starter flow: complete 20-minute mini yoga practice for all ages and abilities",
+      "challenge": 1,
+      "description": "Gentle full-body sequence emphasizing mobility and relaxation, adaptable for any time of day.",
+      "total_duration": "00:19:50",
+      "sequence": [
+        {
+          "pose": "Circle of Joy",
+          "duration_seconds": 30,
+          "repeat_times": 5,
+          "transition_notes": "Standing flow: Inhale arms up, exhale sweep down. Maintain soft knees"
+        },
+        {
+          "pose": "Gate Pose with Side Bow",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Hold bow 3 breaths. Keep hips stacked"
+        },
+        {
+          "pose": "Pigeon Limbering",
+          "duration_seconds": 20,
+          "repeat_times": 10,
+          "transition_notes": "5 reps/side: Pulse hips forward on exhale. Use blanket under knee"
+        },
+        {
+          "pose": "Shoulder Sweeps",
+          "duration_seconds": 15,
+          "repeat_times": 10,
+          "transition_notes": "5/side: Circle arms backward with controlled movement"
+        },
+        {
+          "pose": "Easy Sun Salute",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: Step back/forward. Skip Chaturanga for knee-down option"
+        },
+        {
+          "pose": "Reclining Twist Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Place hand on outer knee. Gaze over shoulder"
+        },
+        {
+          "pose": "Peaceful Mind Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Supine position with legs elevated on bolster. Eye pillow optional"
+        }
+      ]
+    },
+    {
+      "name": "Power Flow",
+      "challenge": 2,
+      "description": "Dynamic sequence using Three-Legged Dog transitions between standing postures, emphasizing strength and balance with Ocean Breath. Includes peak poses and cool-down.",
+      "total_duration": "01:24:45",
+      "sequence": [
+        {
+          "pose": "Spine Mobilizer",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Begin seated, focus on spinal articulation. Use 5-8 deep Ocean Breaths."
+        },
+        {
+          "pose": "Strengthening Sun Salutation",
+          "duration_seconds": 60,
+          "repeat_times": 4,
+          "transition_notes": "Maintain 3-second holds in Plank/Chaturanga. Sync with Ocean Breath (inhale up dog/exhale down dog)"
+        },
+        {
+          "pose": "Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Engage glutes, keep hips square. Transition to lunge on exhale."
+        },
+        {
+          "pose": "Exultant Warrior Flow",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Left side: Hold crescent lunge 3 breaths. Flow through 3 cycles per side."
+        },
+        {
+          "pose": "Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Right leg lift: Maintain neutral pelvis. Move to lunge with control."
+        },
+        {
+          "pose": "Exultant Warrior Flow",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Right side: Keep front knee at 90°. Use arm sweep to maintain balance."
+        },
+        {
+          "pose": "Three-Legged Dog",
+          "duration_seconds": 30,
+          "repeat_times": 1,
+          "transition_notes": "Neutral reset: Check hand-foot alignment before transitioning"
+        },
+        {
+          "pose": "Shoulder-Stretching Triangle",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Each side: Rotate chest upward, 5 breaths per side. Modify with block if needed"
+        },
+        {
+          "pose": "Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Prepare for Standing Splits: Engage core before lifting leg"
+        },
+        {
+          "pose": "Standing Splits",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Hold 3 breaths per side. Focus on hamstring release over height"
+        },
+        {
+          "pose": "Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Transition to Eagle: Keep shoulders relaxed"
+        },
+        {
+          "pose": "Shoulder-Releasing Eagle",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "3 breaths standing, 3 breaths folded. Unwind slowly"
+        },
+        {
+          "pose": "Open Squat Twist",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "5 breaths per side. Keep heels grounded"
+        },
+        {
+          "pose": "East–West Flow",
+          "duration_seconds": 90,
+          "repeat_times": 3,
+          "transition_notes": "Flow continuously: 6 cycles total (3 per direction)"
+        },
+        {
+          "pose": "Inclined Plane Pose",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Hold 5 breaths per rep. Engage glutes to protect lower back"
+        },
+        {
+          "pose": "Intense Reclining Side-Stretch",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "2-minute hold per side. Use bolster for support if needed"
+        },
+        {
+          "pose": "Dancing Bridge",
+          "duration_seconds": 60,
+          "repeat_times": 5,
+          "transition_notes": "Pulse hips upward on exhale. Keep neck relaxed"
+        },
+        {
+          "pose": "Plough-Pose Lifts",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Controlled lifts: 3 seconds up, 3 seconds down"
+        },
+        {
+          "pose": "Three-Up Bridge Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "30-second hold per variation. Support sacrum with hands"
+        },
+        {
+          "pose": "Starter Shoulder-Stand",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "3-minute hold. Use folded blankets for neck support"
+        },
+        {
+          "pose": "Neck Releases After Inversions",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Gentle rotations: 8 circles each direction"
+        },
+        {
+          "pose": "Reclining Eagle Twist",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "2.5 minutes total (75s per side). Focus on diaphragmatic breathing"
+        },
+        {
+          "pose": "Half-Lotus Balance",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "30 seconds per side. Modify with ankle cross if needed"
+        },
+        {
+          "pose": "Head-Beyond-The-Knee Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "1.5 minutes per side. Use strap for hamstring modification"
+        },
+        {
+          "pose": "Peaceful Mind Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Full-body scan: 5 minutes supine with eye pillow"
+        },
+        {
+          "pose": "Mindfulness Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Seated meditation: Focus on Ocean Breath rhythm"
+        }
+      ]
+    },
+    {
+      "name": "supple and strong flow",
+      "challenge": 2,
+      "description": "A Yang sequence blending Sun Salutations with strength postures, using Dog-Pose Split transitions to integrate flowing movements. Focuses on core engagement and bilateral balance.",
+      "total_duration": "01:12:35",
+      "sequence": [
+        {
+          "pose": "Seated Neck Stretch and Strengthen",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Roll shoulders back after release, transition to cross-legged position for Sun Salute prep"
+        },
+        {
+          "pose": "Easy Sun Salute",
+          "duration_seconds": 75,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: 5 breaths per cycle. Transition via downward dog with bent knees"
+        },
+        {
+          "pose": "Dog-Pose Split – lunge foot forward",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Hips square, transition to lunge on exhale"
+        },
+        {
+          "pose": "Bound Side-Angle Stretch",
+          "duration_seconds": 50,
+          "repeat_times": 1,
+          "transition_notes": "Maintain bind while rotating chest upward, step back to downward dog"
+        },
+        {
+          "pose": "Dog-Pose Split – lunge foot forward",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Right leg lift: Keep shoulders over wrists, engage lower abdominals"
+        },
+        {
+          "pose": "Bound Side-Angle Stretch",
+          "duration_seconds": 50,
+          "repeat_times": 1,
+          "transition_notes": "Ground through outer back foot, transition via vinyasa flow"
+        },
+        {
+          "pose": "Dog-Pose Split – lunge foot forward",
+          "duration_seconds": 25,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Prep for revolved pose by twisting torso slightly"
+        },
+        {
+          "pose": "Revolved Half-Moon Flow",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Stack hips, use block under hand if needed"
+        },
+        {
+          "pose": "Dog Pose Split – each side",
+          "duration_seconds": 30,
+          "repeat_times": 2,
+          "transition_notes": "Right then left: Maintain neutral pelvis, transition through tabletop position"
+        },
+        {
+          "pose": "Dancer’s Bow",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Release grip slowly, lower leg with control to mountain pose"
+        },
+        {
+          "pose": "Big-Toe Balance",
+          "duration_seconds": 35,
+          "repeat_times": 2,
+          "transition_notes": "Use wall support if needed, transition via forward fold"
+        },
+        {
+          "pose": "Crow to Plank Jump-Backs",
+          "duration_seconds": 15,
+          "repeat_times": 6,
+          "transition_notes": "Engage mula bandha for lift, land with soft elbows"
+        },
+        {
+          "pose": "Core-Activating Plank Flow",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Alternate forearm/high plank: Keep navel drawn upward"
+        },
+        {
+          "pose": "Threaded Needle",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Unthread slowly, reset in tabletop before switching sides"
+        },
+        {
+          "pose": "Half-Frog, Half-Locust",
+          "duration_seconds": 30,
+          "repeat_times": 2,
+          "transition_notes": "Alternate variations every 15 seconds, press pubic bone down"
+        },
+        {
+          "pose": "Sage Pose with Neck Releases",
+          "duration_seconds": 75,
+          "repeat_times": 1,
+          "transition_notes": "Unwind twist gradually, return to center with chin parallel to floor"
+        },
+        {
+          "pose": "Hip-Opening Heron Pose",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Support thigh with strap, transition via gentle leg circles"
+        },
+        {
+          "pose": "Headstand pose",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Exit via controlled tuck roll, immediately move to child's pose"
+        },
+        {
+          "pose": "Neck Releases after Inversions",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Perform seated chin tucks before reclining twists"
+        },
+        {
+          "pose": "Three-Step Reclining Twist",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Progress through 3 arm positions: T-shape, bent elbow, overhead"
+        },
+        {
+          "pose": "Tibetan Alternate-Nostril Breathing",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Use vishnu mudra, transition to savasana with prolonged exhalations"
+        },
+        {
+          "pose": "Serenity Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Elevate legs on bolster, place sandbag over abdomen"
+        },
+        {
+          "pose": "Gratitude Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Sit upright with spine elongated, hands in chin mudra"
+        }
+      ]
+    },
+ 
+    {
+      "name": "energy and balance",
+      "challenge": 2,
+      "description": "Grounding sequence combining martial arts-inspired breathwork with dynamic balancing postures. Focuses on hip-shoulder integration and energy channeling using Ocean Breath.",
+      "total_duration": "01:05:35",
+      "sequence": [
+        {
+          "pose": "Chair-Pose Flow",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Flow between Chair and Mountain Pose: Inhale to rise, exhale to sink. Keep knees tracking over toes. Transition via Uttanasana (Forward Fold) for spinal decompression"
+        },
+        {
+          "pose": "Dragon Flow",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: On exhale, lower back knee to transition. Keep front heel grounded. Use hand-on-thigh support for hip alignment"
+        },
+        {
+          "pose": "Spiralling Dog",
+          "duration_seconds": 20,
+          "repeat_times": 4,
+          "transition_notes": "Add spinal twist in Down Dog: Lift R hand to L ankle on inhale, return on exhale. Alternate sides each rep. Maintain shoulder stability"
+        },
+        {
+          "pose": "Warrior I Breathing Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Sync breath to arm sweeps: Inhale arms up, exhale into Warrior. Transition via Plank Pose between sides for core activation"
+        },
+        {
+          "pose": "Shoulder-Releasing Eagle",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Unwind arms slowly on exhale. Transition via Tadasana (Mountain) with shoulder rolls. Alternate wrapped arm positions each side"
+        },
+        {
+          "pose": "Pyramid Prayer",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Step back foot 6\" wider for stability. Transition via low lunge. Use block under hands if hamstrings tighten"
+        },
+        {
+          "pose": "Deep Forward Bend at the Wall",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Walk hands up wall to exit. Bend knees slightly before stepping back. Use wall pressure to deepen hamstring release"
+        },
+        {
+          "pose": "Twisted Pigeon",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Guide top knee across body with exhale. Exit via Tabletop Position. Use blanket under hip if needed"
+        },
+        {
+          "pose": "Dog to Plank Flow",
+          "duration_seconds": 20,
+          "repeat_times": 5,
+          "transition_notes": "Engage transverse abdominals during transitions. For advanced: Add knee-to-nose tuck during Plank phase"
+        },
+        {
+          "pose": "Pigeon Crescent Pose",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Transition from Pigeon to Crescent: Inhale sweep arms up, exhale sink into lunge. Keep back knee lowered for stability"
+        },
+        {
+          "pose": "Bow Pose Three Ways",
+          "duration_seconds": 40,
+          "repeat_times": 3,
+          "transition_notes": "Cycle through variations: 1) Static hold 2) Rocking motion 3) Single-leg lift. Transition via Cobra Pose between reps"
+        },
+        {
+          "pose": "Child Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Walk hands to R/L sides to stretch obliques before rising. Use bolster under torso for restorative option"
+        },
+        {
+          "pose": "Seated Yogic Roll-Downs",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Initiate from pelvic floor on exhale. Articulate each vertebra. Use wall support behind back if needed"
+        },
+        {
+          "pose": "Seated Rotated Gate",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Place opposite hand on outer knee for leverage. Gaze over shoulder. Transition via neutral spine position between sides"
+        },
+        {
+          "pose": "Forearm Balance",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Use wall for support: Walk feet up gradually. Exit via controlled tuck roll. Follow with Wrist Stretches"
+        },
+        {
+          "pose": "Heavenly Happy-Baby Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Rock side-to-side to release sacrum. Transition via gentle log roll to supine position. Modify with strap around arches"
+        },
+        {
+          "pose": "Energy-Balancing Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Incorporate Jin Shin Jyutsu hand positions: R hand on forehead, L on belly. Visualize energy circulating through meridians"
+        },
+        {
+          "pose": "Focusing Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Transition via Sukhasana (Easy Seat) with hip elevation. Use Gyan mudra. Focus on third eye during Ocean Breath retention"
+        }
+      ]
+    },
+    
+    {
+      "name": "stretch and restore",
+      "challenge": 2,
+      "description": "Blends active yang stretches with restorative holds. Uses props for deep release in forward bends and inversions.",
+      "total_duration": "01:12:45",
+      "sequence": [
+        {
+          "pose": "Backbend Ripple, or Rectangular Breath",
+          "duration_seconds": 90,
+          "repeat_times": 2,
+          "transition_notes": "Flow between gentle backbends on 4-count Rectangular Breath (inhale 4, hold 4, exhale 4, hold 4). Transition to standing neutral spine."
+        },
+        {
+          "pose": "Salute to the Moon",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Lateral flow sequence: Step wide, arc arms overhead to side. Return via forward fold. Mirror opposite side."
+        },
+        {
+          "pose": "Double-Twist Dog Pose",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "From Down Dog: Thread right knee to left elbow, then left knee to right elbow. Reset in neutral Down Dog between twists."
+        },
+        {
+          "pose": "Seaweed Sway",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Standing side bends: Root through feet, alternate sides fluidly. Use momentum from previous bend."
+        },
+        {
+          "pose": "Bowing Side-Angle Pose",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "From Warrior II: Fold forward into bound angle. Release bind first before transitioning sides."
+        },
+        {
+          "pose": "Seaweed Sway",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Repeat earlier pattern. Sync sway speed with Ocean Breath rhythm."
+        },
+        {
+          "pose": "Sugar-Cane Goddess Pose",
+          "duration_seconds": 50,
+          "repeat_times": 2,
+          "transition_notes": "From Side Angle: Grasp top foot, arch back. Release foot first, then lower torso."
+        },
+        {
+          "pose": "Shoulder-Releasing Forward Fold",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Interlace hands behind back, fold. Bend knees slightly to transition out."
+        },
+        {
+          "pose": "Kinky Cobbler’s Pose",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Sit slowly with bolster support. Use hands to guide knees downward."
+        },
+        {
+          "pose": "Yogic Compass",
+          "duration_seconds": 75,
+          "repeat_times": 2,
+          "transition_notes": "From seated: Rotate pelvis to guide leg position. Alternate sides via neutral spine reset."
+        },
+        {
+          "pose": "Prayer Sweeps",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Seated spinal waves: Sweep arms up/down in prayer. Flow directly into next sweep."
+        },
+        {
+          "pose": "Camel Flow",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Pulse hips forward 3x per cycle. Place hands on sacrum when exiting."
+        },
+        {
+          "pose": "Corkscrew Twist",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Supine spiral: Lead with knee, then ribcage. Untwist completely before switching."
+        },
+        {
+          "pose": "Blissful Banana",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "Log-roll to side. Place bolster along concave curve of body."
+        },
+        {
+          "pose": "Resting Pigeon",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "Slide leg forward with hands. Exit by pressing into palms, tuck back toes."
+        },
+        {
+          "pose": "Restorative Forward Bends",
+          "duration_seconds": 240,
+          "repeat_times": 1,
+          "transition_notes": "Use chair/bolster. Fold torso onto prop, then slide hands to floor to exit."
+        },
+        {
+          "pose": "Restorative Inversion",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Elevate hips on folded blanket. Slide legs up wall one at a time."
+        },
+        {
+          "pose": "Floating Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Place sandbag on feet. Roll head gently side-to-side before stillness."
+        },
+        {
+          "pose": "Loving-Kindness Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Shift to cross-legged position. Place hands in Anjali mudra at heart."
+        }
+      ]
+    },
+    
+    {
+      "name": "clear and calm",
+      "challenge": 2,
+      "description": "A balanced fusion of Yin long-hold postures and gentle Yang flows to release tension, improve joint mobility, and cultivate mental clarity. Integrates Taoist meridian principles with modern fascial release techniques.",
+      "total_duration": "01:13:00",
+      "sequence": [
+        {
+          "pose": "Butterfly pose",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From seated, press soles together. Use blocks under knees if needed. Transition to forward fold by walking hands forward gradually"
+        },
+        {
+          "pose": "Mini Sun Salute",
+          "duration_seconds": 60,
+          "repeat_times": 3,
+          "transition_notes": "Modified flow: Step back to plank instead of jumping. Sync breath to movement (inhale upward, exhale fold)"
+        },
+        {
+          "pose": "Yin Dragon Lunge",
+          "duration_seconds": 180,
+          "repeat_times": 2,
+          "transition_notes": "Alternate sides: Lower back knee slowly. Use folded blanket under knee cap for support"
+        },
+        {
+          "pose": "Expansive Breath Warrior",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "Transition from lunge: Ground back foot at 45°, sweep arms overhead with inhale"
+        },
+        {
+          "pose": "Golden Ball Warrior",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "From warrior II: Rotate palms upward, draw imaginary energy ball toward chest. Step back to downward dog between sides"
+        },
+        {
+          "pose": "Slinky Shoulders, Gleeful Glutes",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Seated pulses: Roll shoulders back on inhale, forward on exhale. Maintain neutral spine"
+        },
+        {
+          "pose": "Tension-Releasing Forward Fold",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "From standing: Hinge at hips, bend knees generously. Release head/neck completely"
+        },
+        {
+          "pose": "Cobbler’s Bridge",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From supine: Press soles together, knees out. Lift hips slowly with pelvic floor engagement"
+        },
+        {
+          "pose": "Sphinx pose, or Seal pose",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "Prone transition: Walk elbows forward incrementally to find edge. Keep shoulders away from ears"
+        },
+        {
+          "pose": "Yin Happy Baby",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "From supine: Grab outer feet, rock gently side-to-side before settling"
+        },
+        {
+          "pose": "Banana Pose",
+          "duration_seconds": 180,
+          "repeat_times": 2,
+          "transition_notes": "Side-lying transition: Stack knees/ankles, reach overhead arm in slow arc"
+        },
+        {
+          "pose": "Yin Shoulder Stretches",
+          "duration_seconds": 120,
+          "repeat_times": 2,
+          "transition_notes": "Tabletop transition: Thread needle with controlled arm rotation. Alternate sides smoothly"
+        },
+        {
+          "pose": "Yin Frog",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "From prone: Slide knees apart incrementally. Support inner thighs with rolled towels if needed"
+        },
+        {
+          "pose": "Child Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Kneeling transition: Walk hands back toward heels to decompress spine"
+        },
+        {
+          "pose": "Energy-Balancing Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Supine transition: Place weighted sandbags on feet/shoulders for grounding if available"
+        },
+        {
+          "pose": "Mindfulness Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Seated transition: Elevate hips on bolster for spinal elongation. Use mudra of choice"
+        }
+      ]
+    }
+  ]
+}

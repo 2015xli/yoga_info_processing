@@ -1,0 +1,20 @@
+{ "pose":[
+    { "name": "pose_name_1",
+      "challenge": "1",
+      "introduction": "This modern take on the classic Cat and Cow poses will mobilize your spine and bring it alive. This sequence includes triceps-toning, to keep the arms looking slender. It prepares the shoulders for the strengthening_sun_salutation .",
+      "steps": ["step 1", "step 2"],
+      "attribute": "Yang",
+      "category": "Luscious limbering",
+      "build_up": ["pose_name_r"],
+      "move_forward": [ "pose_name_s" ],
+      "balance_out": [ "pose_name_t" ],
+      "unwind": [ "pose_name_x" ],
+      "modification": "",
+      "caution": "If your wrists need extra care, work with your fists to the floor instead of the flat of your hands.",
+      "effects": "",
+      "practice_note": "",
+      "how_to_come_out": ""
+    }
+  ]
+}
+

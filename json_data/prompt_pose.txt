@@ -1,0 +1,33 @@
+I am trying to build a knowledge graph based on neo4j and chroma (or faiss) for my yoga knowledge data.
+First I will build a knowledge graph for yoga poses based on my array_pose.json file, which has data of 
+{ "pose":[
+    { "name": "pose_name_1",
+      "challenge": "1",
+      "introduction": "This modern take on the classic Cat and Cow poses will mobilize your spine and bring it alive. This sequence includes triceps-toning, to keep the arms looking slender. It prepares the shoulders for the strengthening_sun_salutation .",
+      "steps": ["step 1", "step 2"],
+      "attribute": "Yang",
+      "category": "Luscious limbering",
+      "build_up": ["pose_name_r"],
+      "move_forward": [ "pose_name_s" ],
+      "balance_out": [ "pose_name_t" ],
+      "unwind": [ "pose_name_x" ],
+      "modification": "",
+      "caution": "If your wrists need extra care, work with your fists to the floor instead of the flat of your hands.",
+      "effects": "",
+      "practice_note": "",
+      "how_to_come_out": ""
+    },
+    ... #other poses
+  ]
+} 
+
+
+I need your helps to create neo4j db that has poses as nodes. build_up, move_forward, balance_out, and unwind are arrays that point to other pose nodes.  attribute, category, challenge are nodes that describe the properties of a yoga pose. I have separate json files for their data. Other fields are strings: name, introduction, steps (string array), modification, caution, effects, practice_note, how_to_come_out. The text of these string fields will be put in vector store so that I can do semantic queries, e.g., pose name matching with "name" field, contraindication searching with "caution" field, etc. 
+
+I'd like to create a table in vector store that has multiple columns for those string fields (name, introduction, steps, modification, caution, etc.), instead of put them together as a single Document. In this way I can accurately semantically search specific columns like "caution" for contraindications. The vector store should be saved permanently so that I can load and use them next time.
+
+Since every pose node has relation to other poses, like move_forward, unwind, build_up, balance_out, I can easily get many reachable sequences of yoga poses. And for each pose, I also can check vector store if there are some contraindications, or suitable conditions, etc. Then I can select a sequence for a person that meets his/her needs.  
+
+After all the data files are built into graph, I will use LLM to generate response for my query like: "I am tired, please suggest a 20min relaxing yoga pose sequence."
+
+Please write python code to build such a knowledge graph RAG as first step. I would suggest to use langchain and neo4jGraph. But if you have better idea, I'd like to know your solution. Whether to choose Chroma or other vector store is also your decision. (Btw, for such a task, which one is better, Chroma or Faiss?)

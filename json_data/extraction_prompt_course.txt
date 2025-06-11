@@ -1,0 +1,442 @@
+Following is a few Yoga training courses. I need your help to convert to JSON format with new schema.
+
+==== 
+An example course:
+{
+  "course":
+  {
+    "power flow": {
+      "challenge": "2",
+      "introduction": "Use the Three-Legged Dog between each of the standing postures and between each side of the standing postures. For example, when you first come into Exultant Warrior Flow, you’ll take your left leg up and then lunge it forward. Return to Classic Downward-Facing Dog Pose after that side, then take your right leg up to lunge it forward for the second side of your Warrior. Set your holds in the static poses to suit you; three to five breaths is good. Use the Ocean Breath throughout this sequence, until you get to the relaxation and meditation at the end.",
+      "steps": [
+        "Spine Mobilizer",
+        "Strengthening Sun Salutation x 3–6",
+        "Three-Legged Dog – left leg up – into lunge with left foot forward",
+        "Exultant Warrior Flow",
+        "Three-Legged Dog – right leg up – into lunge with right foot forward – ",
+        "Exultant Warrior Flow on right side",
+        "Three-Legged Dog",
+        "Shoulder-Stretching Triangle Pose",
+        "Three-Legged Dog – into lunge",
+        "Standing Splits",
+        "Three-Legged Dog – into lunge",
+        "Shoulder-Releasing Eagle",
+        "Open Squat Twist",
+        "East–West Flow",
+        "Inclined Plane Pose",
+        "Intense Reclining Side-Stretch",
+        "Dancing Bridge",
+        "Plough-Pose Lifts",
+        "Three-Up Bridge Pose",
+        "Shoulder-Stand (your choice of Starter, Basic or Variations)",
+        "Neck Releases after Inversions",
+        "Reclining Eagle Twist",
+        "Half-Lotus Balance",
+        "Head-Beyond-the-Knee Pose",
+        "Peaceful Mind Relaxation",
+        "Mindfulness Meditation"
+      ],
+      "attribute": "Yang",
+      "category": "Putting it all together"
+    }
+  }
+}
+
+
+====
+Below is the new course schema which I am trying to convert the courses by following with.
+
+{
+    "name": (the course name),
+    "challenge": (1-3)
+    "description": (explanantion of the course contents and characteristics),
+    "sequence": [
+        {
+          "pose": (pose name),
+          "duration_seconds": (duration of the pose in seconds),
+          "repeat_times": (how many times to repeat the pose. The total duration in this pose will multiply duration_seconds),
+          "transition_notes": (notes about how to transition to next pose or between two repetition of the same pose (e.g., left and right). )
+        }
+    ]
+}
+
+Please convert all the sample courses accordinly. I have no idea about the duration_seconds for each pose, and repeat times in the course sequence. Please use your knowledge and search for the suggested values. If you have no value available, please give minimum 30s to the duration_seconds and 1 to the repeat_times. Note, flow poses usually consist of multiple postures and may have left and right sides, so will either take more than 30 seconds for one pose or take more than 1 repeat times.
+
+The transition_notes are about how to transition to next pose or between two repetitions (like right and left transition). They are not about the pose itself, but about transitioning. 
+Please use your knowledge and search for better numbers and notes.
+
+==== Example output for the course "Power Flow":
+{
+  "course": [
+    {
+      "name": "Power Flow",
+      "challenge": 2,
+      "description": "Dynamic sequence using Three-Legged Dog transitions between standing postures, emphasizing strength and balance with Ocean Breath. Includes peak poses and cool-down.",
+      "sequence": [
+        {
+          "pose": "Spine Mobilizer",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "Begin seated, focus on spinal articulation. Use 5-8 deep Ocean Breaths."
+        },
+        {
+          "pose": "Strengthening Sun Salutation",
+          "duration_seconds": 60,
+          "repeat_times": 4,
+          "transition_notes": "Maintain 3-second holds in Plank/Chaturanga. Sync with Ocean Breath (inhale up dog/exhale down dog)"
+        },
+        {
+          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Left leg lift: Engage glutes, keep hips square. Transition to lunge on exhale."
+        },
+        {
+          "pose": "Exultant Warrior Flow",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Left side: Hold crescent lunge 3 breaths. Flow through 3 cycles per side."
+        },
+        {
+          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Right leg lift: Maintain neutral pelvis. Move to lunge with control."
+        },
+        {
+          "pose": "Exultant Warrior Flow",
+          "duration_seconds": 45,
+          "repeat_times": 1,
+          "transition_notes": "Right side: Keep front knee at 90°. Use arm sweep to maintain balance."
+        },
+        {
+          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "duration_seconds": 30,
+          "repeat_times": 1,
+          "transition_notes": "Neutral reset: Check hand-foot alignment before transitioning"
+        },
+        {
+          "pose": "Shoulder-Stretching Triangle",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "Each side: Rotate chest upward, 5 breaths per side. Modify with block if needed"
+        },
+        {
+          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Prepare for Standing Splits: Engage core before lifting leg"
+        },
+        {
+          "pose": "Standing Splits",
+          "duration_seconds": 40,
+          "repeat_times": 2,
+          "transition_notes": "Hold 3 breaths per side. Focus on hamstring release over height"
+        },
+        {
+          "pose": "Three-Legged Dogs: Three-Legged Dog",
+          "duration_seconds": 20,
+          "repeat_times": 1,
+          "transition_notes": "Transition to Eagle: Keep shoulders relaxed"
+        },
+        {
+          "pose": "Shoulder-Releasing Eagle",
+          "duration_seconds": 45,
+          "repeat_times": 2,
+          "transition_notes": "3 breaths standing, 3 breaths folded. Unwind slowly"
+        },
+        {
+          "pose": "Open Squat Twist",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "5 breaths per side. Keep heels grounded"
+        },
+        {
+          "pose": "East–West Flow",
+          "duration_seconds": 90,
+          "repeat_times": 3,
+          "transition_notes": "Flow continuously: 6 cycles total (3 per direction)"
+        },
+        {
+          "pose": "Inclined Plane Pose",
+          "duration_seconds": 30,
+          "repeat_times": 3,
+          "transition_notes": "Hold 5 breaths per rep. Engage glutes to protect lower back"
+        },
+        {
+          "pose": "Intense Reclining Side-Stretch",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "2-minute hold per side. Use bolster for support if needed"
+        },
+        {
+          "pose": "Dancing Bridge",
+          "duration_seconds": 60,
+          "repeat_times": 5,
+          "transition_notes": "Pulse hips upward on exhale. Keep neck relaxed"
+        },
+        {
+          "pose": "Plough-Pose Lifts",
+          "duration_seconds": 45,
+          "repeat_times": 3,
+          "transition_notes": "Controlled lifts: 3 seconds up, 3 seconds down"
+        },
+        {
+          "pose": "Three-Up Bridge Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "30-second hold per variation. Support sacrum with hands"
+        },
+        {
+          "pose": "Starter Shoulder-Stand",
+          "duration_seconds": 180,
+          "repeat_times": 1,
+          "transition_notes": "3-minute hold. Use folded blankets for neck support"
+        },
+        {
+          "pose": "Neck Releases After Inversions",
+          "duration_seconds": 120,
+          "repeat_times": 1,
+          "transition_notes": "Gentle rotations: 8 circles each direction"
+        },
+        {
+          "pose": "Reclining Eagle Twist",
+          "duration_seconds": 150,
+          "repeat_times": 1,
+          "transition_notes": "2.5 minutes total (75s per side). Focus on diaphragmatic breathing"
+        },
+        {
+          "pose": "Half-Lotus Balance",
+          "duration_seconds": 60,
+          "repeat_times": 2,
+          "transition_notes": "30 seconds per side. Modify with ankle cross if needed"
+        },
+        {
+          "pose": "Head-Beyond-The-Knee Pose",
+          "duration_seconds": 90,
+          "repeat_times": 1,
+          "transition_notes": "1.5 minutes per side. Use strap for hamstring modification"
+        },
+        {
+          "pose": "Peaceful Mind Relaxation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Full-body scan: 5 minutes supine with eye pillow"
+        },
+        {
+          "pose": "Mindfulness Meditation",
+          "duration_seconds": 300,
+          "repeat_times": 1,
+          "transition_notes": "Seated meditation: Focus on Ocean Breath rhythm"
+        }
+      ]
+    }
+  ]
+}
+
+====
+Some logics just for your references, you don't have to follow:
+Duration Logic:
+ - Active Poses: 30-90s (based on pose complexity)
+ - Yin/Holds: 2-5 minutes
+ - Meditation: 3-5 minutes
+ - Flows: 1-3 minutes per cycle
+
+Repeat Strategy:
+ - Bilateral poses: repeat_times:1 + "per side" in notes
+ - Cyclic flows: Midpoint of original "x3–6" instructions
+ - Strength sequences: 3-5 reps for endurance
+
+Transition Notes:
+ - Alignment cues ("Engage glutes", "Microbend knees")
+ - Breath coordination ("Inhale expand/exhale release")
+ - Modifications ("Use strap/block/wall")
+
+Challenge Levels:
+- Converted to numbers (1=Beginner, 2=Intermediate)
+- Matched to pose difficulty and hold times
+
+Please use your knowledge and search for better numbers (duration_seconds, repeat_times) and transition_notes.
+
+If you cannot finish all the courses below, please finish the first few, and let me know how many courses you have finished. I will finish the remaining ones later. For the finished course, make sure not to miss any steps. Keeping all the steps complete as the original are most important in the conversion!  
+
+====
+Original JSON doc:
+{
+  "course": {
+    "Starter flow: 15-minute quick-and-easy, all-over supple and strength set": {
+      "challenge": "1",
+      "introduction": "This short practice will refresh both body and mind. Use it as a standalone sequence or to limber up, before launching into some of the postures and practices on other more advanced poses",
+      "steps": [
+        "Tiger Flow",
+        "Spine-Mobilizing Lunge",
+        "Dragon Flow",
+        "Three-Step Shoulder Release",
+        "Reclining Twist Flow",
+        "Mindfulness Meditation : 5 minutes"
+      ],
+      "attribute": "Yang",
+      "category": "Putting it all together",
+      "cautions": "Avoid strenuous long holds in standing postures and other yoga poses, if you have a heart condition or blood-pressure problems."
+    },
+    "Starter flow: complete 20-minute mini yoga practice for all ages and abilities": {
+      "challenge": "1",
+      "introduction": "This stretch-and-lengthen sequence suits just about everyone. Use it morning, night or whenever you need a break during the day.",
+      "steps": [
+        "Circle of Joy : 5 cycles",
+        "Gate Pose with Side Bow",
+        "Pigeon Limbering : 5 on each side",
+        "Shoulder Sweeps : 5 on each side",
+        "Easy Sun Salute : 3 on each side",
+        "Reclining Twist Flow",
+        "Peaceful Mind Relaxation : 5 minutes"
+      ],
+      "attribute": "Yang",
+      "category": "Putting it all together",
+      "cautions": "Avoid strenuous long holds in standing postures and other yoga poses, if you have a heart condition or blood-pressure problems."
+    },
+    "power flow": {
+      "challenge": "2",
+      "introduction": "Use the Three-Legged Dog between each of the standing postures and between each side of the standing postures. For example, when you first come into Exultant Warrior Flow, you’ll take your left leg up and then lunge it forward. Return to Classic Downward-Facing Dog Pose after that side, then take your right leg up to lunge it forward for the second side of your Warrior. Set your holds in the static poses to suit you; three to five breaths is good. Use the Ocean Breath throughout this sequence, until you get to the relaxation and meditation at the end.",
+      "steps": [
+        "Spine Mobilizer",
+        "Strengthening Sun Salutation x 3–6",
+        "Three-Legged Dog – left leg up – into lunge with left foot forward",
+        "Exultant Warrior Flow",
+        "Three-Legged Dog – right leg up – into lunge with right foot forward – ",
+        "Exultant Warrior Flow on right side",
+        "Three-Legged Dog",
+        "Shoulder-Stretching Triangle Pose",
+        "Three-Legged Dog – into lunge",
+        "Standing Splits",
+        "Three-Legged Dog – into lunge",
+        "Shoulder-Releasing Eagle",
+        "Open Squat Twist",
+        "East–West Flow",
+        "Inclined Plane Pose",
+        "Intense Reclining Side-Stretch",
+        "Dancing Bridge",
+        "Plough-Pose Lifts",
+        "Three-Up Bridge Pose",
+        "Shoulder-Stand (your choice of Starter, Basic or Variations)",
+        "Neck Releases after Inversions",
+        "Reclining Eagle Twist",
+        "Half-Lotus Balance",
+        "Head-Beyond-the-Knee Pose",
+        "Peaceful Mind Relaxation",
+        "Mindfulness Meditation"
+      ],
+      "attribute": "Yang",
+      "category": "Putting it all together"
+    },
+    "supple and strong flow": {
+      "challenge": "2",
+      "introduction": "Here you can pepper your Sun Salutes with your standing postures. Do one complete round of the Sun Salute and then, each time you come into the Classic Downward-Facing Dog Pose after the Cobra, take the Dog-Pose Split and lunge the raised foot forward, so that you are ready for your standing posture. Once you have completed the first side, come to standing again. Complete the other half of your Sun Salute, ready to lunge the second leg forward, for side two of the standing posture. Use the Ocean Breath through the active part of the sequence.",
+      "steps": [
+        "Seated Neck Stretch and Strengthen",
+        "Easy Sun Salute",
+        "Dog-Pose Split – lunge foot forward",
+        "Bound Side-Angle Stretch",
+        "Dog-Pose Split – lunge foot forward",
+        "Bound Side-Angle Stretch",
+        "Dog-Pose Split – lunge foot forward",
+        "Revolved Half-Moon Flow",
+        "Dog Pose Split – each side",
+        "Dancer’s Bow",
+        "Big-Toe Balance",
+        "Crow to Plank Jump-Backs",
+        "Core-Activating Plank Flow",
+        "Threaded Needle",
+        "Half-Frog, Half-Locust",
+        "Sage Pose with Neck Releases",
+        "Hip-Opening Heron Pose",
+        "Headstand",
+        "Neck Releases after Inversions",
+        "Three-Step Reclining Twist",
+        "Tibetan Alternate-Nostril Breathing",
+        "Serenity Relaxation",
+        "Gratitude Meditation"
+      ],
+      "attribute": "Yang",
+      "category": "Putting it all together"
+    },
+    "energy and balance": {
+      "challenge": "2",
+      "introduction": "Use the Ocean Breath throughout this sequence, as it will help you feel strong, long and limber.",
+      "steps": [
+        "Chair-Pose Flow",
+        "Dragon Flow",
+        "Spiralling Dog",
+        "Warrior I Breathing Flow",
+        "Shoulder-Releasing Eagle",
+        "Pyramid Prayer",
+        "Deep Forward Bend at the Wall",
+        "Twisted Pigeon",
+        "Dog to Plank Flow",
+        "Pigeon Crescent Pose",
+        "Bow Pose Three Ways",
+        "Child Pose",
+        "Seated Yogic Roll-Downs",
+        "Seated Rotated Gate",
+        "Forearm Balance",
+        "Heavenly Happy-Baby Pose",
+        "Energy-Balancing Relaxation",
+        "Focusing Meditation"
+      ],
+      "attribute": "Balance",
+      "category": "Putting it all together"
+    },
+    "stretch and restore": {
+      "challenge": "2",
+      "introduction": "You’ll feel your body open and warm with the active part of the practice, and then enjoy the rewards of the restorative postures to finish. Use the Ocean Breath through the active practices.",
+      "steps": [
+        "Backbend Ripple , using Rectangular Breath",
+        "Salute to the Moon",
+        "Double-Twist Dog Pose",
+        "Seaweed Sway",
+        "Bowing Side-Angle Pose",
+        "Seaweed Sway",
+        "Sugar-Cane Goddess Pose",
+        "Shoulder-Releasing Forward Fold",
+        "Kinky Cobbler’s Pose",
+        "Yogic Compass",
+        "Prayer Sweeps",
+        "Camel Flow", 
+        "Corkscrew Twist", 
+        "Blissful Banana",
+        "Resting Pigeon",
+        "Restorative Forward Bends",
+        "Restorative Inversion",
+        "Floating Relaxation",
+        "Loving-Kindness Meditation"
+      ],
+      "attribute": "Balance",
+      "category": "Putting it all together"
+    },
+    "clear and calm": {
+      "challenge": "2",
+      "introduction": "This practice helps to slow and clear the mind, and mixes tension-releasing active yang postures with slow, focusing yin postures.",
+      "steps": [
+        "Butterfly",
+        "Mini Sun Salute",
+        "Yin Dragon Lunge",
+        "Expansive Breath Warrior",
+        "Golden Ball Warrior",
+        "Slinky Shoulders, Gleeful Glutes",
+        "Tension-Releasing Forward Fold",
+        "Cobbler’s Bridge",
+        "Sphinx or Seal",
+        "Yin Happy Baby",
+        "Banana Pose",
+        "Yin Shoulder Stretches",
+        "Yin Frog",
+        "Child Pose",
+        "Energy-Balancing Relaxation",
+        "Mindfulness Meditation"
+      ],
+      "attribute": "Yin",
+      "category": "Putting it all together"
+    }
+  }
+}
+
