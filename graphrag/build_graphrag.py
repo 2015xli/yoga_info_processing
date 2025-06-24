@@ -1,13 +1,13 @@
-import json
+import os, json
 from neo4j import GraphDatabase
 import chromadb
 from chromadb.config import Settings
 from chromadb.utils import embedding_functions
 
 # Configuration
-NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "12345678"
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "12345678")
 INPUT_DATA_DIR = "/home/xli/NAS/home/bin/yoga-info-processing/graphrag"
 CHROMA_PERSIST_DIR = f"{INPUT_DATA_DIR}/chroma_db"
 POSE_JSON = f"{INPUT_DATA_DIR}/array_pose.json"
@@ -17,6 +17,7 @@ CHALLENGE_JSON = f"{INPUT_DATA_DIR}/array_challenge.json"
 COURSE_JSON = f"{INPUT_DATA_DIR}/array_course.json"
 CHROMA_COLLECTION_POSE = "yoga_pose"
 CHROMA_COLLECTION_COURSE = "yoga_course"
+CHROMA_COLLECTION_CATEGORY = "yoga_category"
 
 def delete_chroma_collection(chroma_client, collection_name: str):
     existing = [col.name for col in chroma_client.list_collections()]
@@ -223,6 +224,46 @@ def build_pose_chroma_db(chroma_client):
 
     print(f"Yoga pose ChromaDB collection contains {collection.count()} documents")
 
+def build_category_chroma_db(chroma_client):
+    """Build ChromaDB collection for yoga categories"""
+    sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name="all-MiniLM-L6-v2"
+    )
+    collection = chroma_client.get_or_create_collection(
+        name=CHROMA_COLLECTION_CATEGORY,
+        embedding_function=sentence_transformer_ef,
+        metadata={"hnsw:space": "cosine"}
+    )
+    
+    # Load course data
+    try:
+        category_data = load_json_data(CATEGORY_JSON)["category"]
+    except Exception as e:
+        print(f"⚠️ Failed to load category data: {str(e)}")
+        return
+    
+    # Add courses to collection
+    for category in category_data:
+        # Create a comprehensive document for semantic search
+        guidelines = "\n".join(category.get("guidelines", []))
+        
+        document = (
+            f"Category: {category['name']}\n"
+            f"Introduction: {category['introduction']}\n"
+            f"Guidelines:{guidelines}"
+        )
+        
+        collection.add(
+            documents=[document],
+            ids=[category['name']],
+            metadatas=[{
+                "category": category['name']
+            }]
+        )
+    
+    print(f"Yoga category ChromaDB collection contains {collection.count()} documents")
+
+
 def build_course_chroma_db(chroma_client):
     """Build ChromaDB collection for yoga courses"""
     sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(
@@ -264,10 +305,10 @@ def build_course_chroma_db(chroma_client):
                 "course": course['name'],
                 "challenge": course['challenge'],
                 "duration": course['total_duration']
-            }]
+                }]
         )
     
-    print(f"Yoga course ChromaDB course collection contains {collection.count()} documents")
+    print(f"Yoga course ChromaDB collection contains {collection.count()} documents")
 
 
 def check_neo4j_dbms_connection(driver):
@@ -301,9 +342,11 @@ if __name__ == "__main__":
     check_chroma_dir_permission()
     chroma_client = chromadb.PersistentClient(path=CHROMA_PERSIST_DIR)
     delete_chroma_collection(chroma_client, CHROMA_COLLECTION_POSE)
-    delete_chroma_collection(chroma_client, CHROMA_COLLECTION_COURSE) 
     build_pose_chroma_db(chroma_client)
+    delete_chroma_collection(chroma_client, CHROMA_COLLECTION_COURSE) 
     build_course_chroma_db(chroma_client)
+    delete_chroma_collection(chroma_client, CHROMA_COLLECTION_CATEGORY)     
+    build_category_chroma_db(chroma_client)
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     check_neo4j_dbms_connection(driver)
