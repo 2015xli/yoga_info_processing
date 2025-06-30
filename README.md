@@ -32,9 +32,13 @@ To set up and run the application, follow these steps:
     pip install neo4j openai chromadb-client uvicorn fastapi requests
     ```
 
-### Building the Knowledge Graph and ChromaDB
+### ReBuilding the Knowledge Graph and ChromaDB
 
-Before running the application, you need to populate the databases:
+Before running the application, you should have the databases ready. 
+The default chroma databases have been provided under chroma_db/. You don't have to recreate them.
+The default neo4j database has a dumped backup with neo4j_db/data/neo4j.dump, you need restore it to your Neo4j instance.
+
+If you don't want to use the default databases, you can rebuild them with:
 
 ```bash
 python build_graphrag.py
@@ -59,13 +63,6 @@ The runner will start the pose checker API server in the background, interact wi
 
 Here's a breakdown of the files and directories in this project:
 
-*   **`array_anatomical.json`**: JSON data file containing anatomical information (likely for pose descriptions).
-*   **`array_attribute.json`**: JSON data file listing various yoga attributes.
-*   **`array_category.json`**: JSON data file listing different yoga categories.
-*   **`array_challenge.json`**: JSON data file listing different challenge levels for yoga.
-*   **`array_course.json`**: JSON data file containing definitions of pre-existing yoga courses, including their sequences.
-*   **`array_health_issue.json`**: JSON data file containing health issues (likely for contraindications).
-*   **`array_pose.json`**: JSON data file containing detailed information about individual yoga poses.
 *   **`build_graphrag.py`**:
     *   **Purpose**: Script responsible for building and populating the Neo4j knowledge graph and ChromaDB vector databases from the `array_*.json` files. It's the initial setup script for the data layer.
 *   **`check_yoga_pose.py`**:
@@ -77,7 +74,6 @@ Here's a breakdown of the files and directories in this project:
 *   **`prompt_to_write_app.txt`**: (Likely a historical prompt used during development, not part of the application's runtime logic.)
 *   **`recommend_course_from_category.py`**:
     *   **Purpose**: Implements the `CategoryCourseRecommender` class, which uses LLMs and Neo4j to dynamically compose a new yoga pose sequence based on user objectives and related yoga categories. This file is imported and used by the `category_recommender` agent.
-*   **`summary.txt`**: (Likely a historical summary, not part of the application's runtime logic.)
 *   **`yoga_application_runner.py`**:
     *   **Purpose**: The main entry point and orchestrator of the entire application. It starts the `pose_checker` FastAPI server, coordinates with the `course_finder` and `category_recommender` agents, validates pose sequences, and handles fallbacks and retries.
 *   **`chroma_db/`**:
@@ -94,5 +90,12 @@ Here's a breakdown of the files and directories in this project:
     *   **Purpose**: Top-level directory for all shared service modules.
     *   **`services/pose_checker/`**:
         *   **`services/pose_checker/server.py`**: Implements the FastAPI server for the pose checking service. It exposes an API endpoint that utilizes the `check_yoga_pose.py` logic.
+*   **`array_anatomical.json`**: JSON data file containing anatomical information (planned for Yoga course recommendation regarding strengthening and contraindications, not used yet).
+*   **`array_attribute.json`**: JSON data file listing various yoga attributes.
+*   **`array_category.json`**: JSON data file listing different yoga categories.
+*   **`array_challenge.json`**: JSON data file listing different challenge levels for yoga.
+*   **`array_course.json`**: JSON data file containing definitions of pre-existing yoga courses, including their sequences.
+*   **`array_health_issue.json`**: JSON data file containing health issues (planned for Yoga course recommendation regarding contraindications related poses. Not used yet).
+*   **`array_pose.json`**: JSON data file containing detailed information about individual yoga poses.
 
 ```
