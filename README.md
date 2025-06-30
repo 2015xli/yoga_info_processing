@@ -24,9 +24,10 @@ To set up and run the application, follow these steps:
 
 ### Installation
 
-1.  **Clone the repository** (if you haven't already).
+1.  **Clone the repository** 
 2.  **Navigate to the project root directory**: `/home/xli/NAS/home/bin/yoga-info-processing/`
-3.  **Install Python dependencies**:
+3.  **Make or enter your python virtual environment**
+4.  **Install Python dependencies**:
     ```bash
     pip install neo4j openai chromadb-client uvicorn fastapi requests
     ```
